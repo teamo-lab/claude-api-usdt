@@ -1,8 +1,8 @@
-# 用 USDT 充值 Claude API（不办 U卡、不用海外信用卡）
+# 用 USDT 充值 Claude / GPT / 生图 API（不办 U卡、不用海外信用卡）
 
 [English](#english) · 中文
 
-想用 Claude、GPT 但没有海外信用卡，U卡办不下来，野卡也停了？可以直接用 USDT 给 [TeamoRouter](https://teamorouter.com/zh) 充值，按量调用 Claude、GPT、Gemini、DeepSeek 等模型，也能接 Claude Code 和 Codex。
+想用 Claude、GPT 但没有海外信用卡，U卡办不下来，野卡也停了？可以直接用 USDT 给 [TeamoRouter](https://teamorouter.com/zh) 充值，一个 Key 按量调用 Claude、GPT（含 Codex 用的 GPT-6 系列）、GPT Image 生图、Gemini、DeepSeek 等 30 多个模型，适合个人开发者，也适合要同时接很多模型的产品和中转站，能开多个 Key 分开统计。
 
 ## 要准备什么
 
@@ -58,9 +58,9 @@
 
 ## English
 
-### Pay for the Claude API with USDT — no credit card, no crypto card
+### Pay for Claude, GPT and image-generation APIs with USDT, no credit card needed
 
-You can pay for Claude, GPT and Gemini API usage with USDT by topping up [TeamoRouter](https://teamorouter.com). The balance also works with Claude Code and Codex.
+You can pay for Claude, GPT (including the GPT-6 models Codex uses), GPT Image, Gemini and DeepSeek API usage with USDT by topping up [TeamoRouter](https://teamorouter.com). One balance covers 30+ models, multiple API keys and tools like Claude Code and Codex.
 
 **What you need:** a desktop browser with the **OKX Wallet** extension, and **USDT on the X Layer network** (shown on-chain as USD₮0). Exchange balances don't count until you withdraw them to your wallet. OKX can withdraw USDT straight to X Layer; from other exchanges, send it to OKX first.
 
