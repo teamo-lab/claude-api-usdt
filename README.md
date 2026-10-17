@@ -4,6 +4,8 @@
 
 想用 Claude、GPT 但没有海外信用卡，U卡办不下来，野卡也停了？可以直接用 USDT 给 [TeamoRouter](https://teamorouter.com/zh) 充值，一个 Key 按量调用 Claude、GPT（含 Codex 用的 GPT-6 系列）、GPT Image 生图、Gemini、DeepSeek 等 30 多个模型，适合个人开发者，也适合要同时接很多模型的产品和中转站，能开多个 Key 分开统计。
 
+完整图文步骤见官方指南：[用 USDT 充值 Claude API](https://teamorouter.com/zh/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt)。
+
 ## 要准备什么
 
 1. 电脑浏览器（Chrome 等）装好 **OKX Wallet** 插件，并解锁钱包。
@@ -59,6 +61,8 @@
 | 计费 | 按量付费 | 月订阅 |
 | 模型 | Claude、GPT、Gemini 等多家 | 只有订阅的那一家 |
 
+野卡停了在找替代的，见 [野卡停了怎么办](https://teamorouter.com/zh/blogs/yeka-wildcard-tingfu-zenmeban?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt)。
+
 没有 USDT 也可以用支付宝，见 [Claude 支付失败？没有海外银行卡的解决方案](https://teamorouter.com/zh/blogs/claude-payment-failed-no-overseas-card)。
 
 ---
@@ -72,5 +76,7 @@ You can pay for Claude, GPT (including the GPT-6 models Codex uses), GPT Image, 
 **What you need:** a desktop browser with the **OKX Wallet** extension, and **USDT on the X Layer network** (shown on-chain as USD₮0). Exchange balances don't count until you withdraw them to your wallet. OKX can withdraw USDT straight to X Layer; from other exchanges, send it to OKX first.
 
 **Steps:** sign in, open the top-up dialog (minimum $5), click **"Pay with crypto"**, approve the connection, switch to X Layer when asked, and sign. You sign an authorization, so you don't need OKB for gas. Then create an API key and connect it, e.g. [Claude Code setup](https://teamorouter.com/docs/install-claude-code).
+
+Full walkthrough: [Pay for the Claude API with USDT](https://teamorouter.com/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt). Russian version: [Оплата Claude API в USDT](https://teamorouter.com/ru/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt).
 
 **Card declined on Claude?** See [How to pay for Claude when your card gets declined](https://teamorouter.com/blogs/claude-card-declined-payment-fixes-2026).
