@@ -1,6 +1,6 @@
 # 用 USDT 充值 Claude / GPT / 生图 API（不办 U卡、不用海外信用卡）
 
-[English](#english) · 中文
+[English](#english) · [Русский](#русский) · 中文
 
 想用 Claude、GPT 但没有海外信用卡，U卡办不下来，野卡也停了？可以直接用 USDT 给 [TeamoRouter](https://teamorouter.com/zh) 充值，一个 Key 按量调用 Claude、GPT（含 Codex 用的 GPT-6 系列）、GPT Image 生图、Gemini、DeepSeek 等 30 多个模型，适合个人开发者，也适合要同时接很多模型的产品和中转站，能开多个 Key 分开统计。
 
@@ -80,3 +80,17 @@ You can pay for Claude, GPT (including the GPT-6 models Codex uses), GPT Image, 
 Full walkthrough: [Pay for the Claude API with USDT](https://teamorouter.com/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt). Russian version: [Оплата Claude API в USDT](https://teamorouter.com/ru/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt).
 
 **Card declined on Claude?** See [How to pay for Claude when your card gets declined](https://teamorouter.com/blogs/claude-card-declined-payment-fixes-2026).
+
+---
+
+## Русский
+
+### Оплата Claude, GPT и API генерации изображений в USDT, без зарубежной карты
+
+Если карта не проходит, а подписка Claude или ChatGPT из России недоступна, можно пополнить баланс [TeamoRouter](https://teamorouter.com/ru?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt) в USDT. Один ключ работает для Claude (Haiku / Sonnet / Opus), GPT (включая GPT-6 для Codex), GPT Image, Gemini и DeepSeek; списание только за использованные токены, без подписки. Claude Code подключается по родному протоколу Anthropic.
+
+**Что понадобится:** браузер на компьютере с расширением **OKX Wallet** и **USDT в сети X Layer** (в блокчейне отображается как USD₮0, 1:1 к USDT). Баланс на бирже не считается, пока вы не выведете его в кошелёк. С OKX USDT выводится прямо в X Layer; с других бирж сначала переведите USDT на OKX (например, по TRC20), затем выведите в X Layer.
+
+**Шаги:** войдите в консоль, откройте окно пополнения (минимум $5), нажмите **«Оплатить криптовалютой»**, подтвердите подключение кошелька, переключитесь на X Layer и подпишите запрос. Это подпись, а не перевод, поэтому платить за газ не нужно.
+
+Подробная инструкция с частыми ошибками: [Как оплатить Claude API в USDT](https://teamorouter.com/ru/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt). Нет USDT — можно оплатить в рублях (СБП, карта Мир, ЮMoney, SberPay): [Claude Code в России](https://teamorouter.com/ru/blogs/claude-code-in-russia?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt).
