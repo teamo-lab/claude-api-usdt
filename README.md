@@ -19,6 +19,7 @@
 | OKX 交易所 | 资产 → 提币 → USDT → 网络选 **X Layer** → 收款地址填自己的 OKX Wallet 地址 |
 | 币安或其他交易所 | 先转到 OKX（网络选两边都支持的，比如 TRC20），再提到 X Layer |
 | TRON 链钱包（TRC20） | 目前不能直接付，要先转到 OKX，再提到 X Layer |
+| 没有 OKX 账号 / 所在地区用不了 OKX | 用 USDT0 官方站 [usdt0.to](https://usdt0.to) 的 Transfer 跨链到 X Layer（来源链要付 gas，先转小额） |
 
 第一次建议先转小额试一下，确认网络和地址都对。
 
@@ -73,7 +74,7 @@
 
 You can pay for Claude, GPT (including the GPT-6 models Codex uses), GPT Image, Gemini and DeepSeek API usage with USDT by topping up [TeamoRouter](https://teamorouter.com). One balance covers 30+ models, multiple API keys and tools like Claude Code and Codex.
 
-**What you need:** a desktop browser with the **OKX Wallet** extension, and **USDT on the X Layer network** (shown on-chain as USD₮0). Exchange balances don't count until you withdraw them to your wallet. OKX can withdraw USDT straight to X Layer; from other exchanges, send it to OKX first.
+**What you need:** a desktop browser with the **OKX Wallet** extension, and **USDT on the X Layer network** (shown on-chain as USD₮0). Exchange balances don't count until you withdraw them to your wallet. OKX can withdraw USDT straight to X Layer; from other exchanges, send it to OKX first. Without an OKX account, move USDT to X Layer with the Transfer page on the official USDT0 site, [usdt0.to](https://usdt0.to) (you pay gas on the source chain).
 
 **Steps:** sign in, open the top-up dialog (minimum $5), click **"Pay with crypto"**, approve the connection, switch to X Layer when asked, and sign. You sign an authorization, so you don't need OKB for gas. Then create an API key and connect it, e.g. [Claude Code setup](https://teamorouter.com/docs/install-claude-code).
 
@@ -89,7 +90,7 @@ Full walkthrough: [Pay for the Claude API with USDT](https://teamorouter.com/blo
 
 Если карта не проходит, а подписка Claude или ChatGPT из России недоступна, можно пополнить баланс [TeamoRouter](https://teamorouter.com/ru?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt) в USDT. Один ключ работает для Claude (Haiku / Sonnet / Opus), GPT (включая GPT-6 для Codex), GPT Image, Gemini и DeepSeek; списание только за использованные токены, без подписки. Claude Code подключается по родному протоколу Anthropic.
 
-**Что понадобится:** браузер на компьютере с расширением **OKX Wallet** и **USDT в сети X Layer** (в блокчейне отображается как USD₮0, 1:1 к USDT). Баланс на бирже не считается, пока вы не выведете его в кошелёк. С OKX USDT выводится прямо в X Layer; с других бирж сначала переведите USDT на OKX (например, по TRC20), затем выведите в X Layer.
+**Что понадобится:** браузер на компьютере с расширением **OKX Wallet** и **USDT в сети X Layer** (в блокчейне отображается как USD₮0, 1:1 к USDT). Баланс на бирже не считается, пока вы не выведете его в кошелёк. С OKX USDT выводится прямо в X Layer; с других бирж сначала переведите USDT на OKX (например, по TRC20), затем выведите в X Layer. Без аккаунта OKX перевести USDT в X Layer можно через раздел Transfer на официальном сайте USDT0 [usdt0.to](https://usdt0.to) (газ платится в исходной сети).
 
 **Шаги:** войдите в консоль, откройте окно пополнения (минимум $5), нажмите **«Оплатить криптовалютой»**, подтвердите подключение кошелька, переключитесь на X Layer и подпишите запрос. Это подпись, а не перевод, поэтому платить за газ не нужно.
 
