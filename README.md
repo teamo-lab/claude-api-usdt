@@ -17,7 +17,7 @@
 | USDT 在哪 | 怎么转 |
 |---|---|
 | OKX 交易所 | 资产 → 提币 → USDT → 网络选 **X Layer** → 收款地址填自己的 OKX Wallet 地址 |
-| 币安或其他交易所 | 先转到 OKX（网络选两边都支持的，比如 TRC20），再提到 X Layer |
+| 币安或其他交易所 | 先转到 OKX（网络选两边都支持的，比如 TRC20），再提到 X Layer；不想开 OKX 账号的话，币安提币网络选 Arbitrum（提出来就是 USDT0），再用 usdt0.to 转到 X Layer |
 | TRON 链钱包（TRC20） | 目前不能直接付，要先转到 OKX，再提到 X Layer |
 | 没有 OKX 账号 / 所在地区用不了 OKX | 用 USDT0 官方站 [usdt0.to](https://usdt0.to) 的 Transfer 跨链到 X Layer（来源链要付 gas，先转小额） |
 
