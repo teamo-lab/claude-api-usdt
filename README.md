@@ -34,6 +34,13 @@
 - Claude 走 Anthropic 原生协议，[Claude Code 接入教程](https://teamorouter.com/zh/docs/install-claude-code)。
 - 想了解它和其他中转的区别：[Claude API 中转](https://teamorouter.com/zh/claude-api-zhongzhuan)。
 
+## 给中转站、做产品要接多个模型的人
+
+- 一个余额覆盖 Claude、GPT（含 gpt-image 生图）、Gemini、DeepSeek 等 30 多个模型，不用每家各开账号、各充一次值。
+- 可以建多个 API Key，每个 Key 的用量分开统计，方便按客户或按项目对账。
+- Claude 走 Anthropic 原生协议，其他模型走 OpenAI 兼容协议，现有代码一般只要换 base URL 和 Key。
+- 用 USDT 充值没有拒卡和跨境手续费，适合没有海外公司卡的团队。
+
 ## 常见报错
 
 | 提示 | 原因 | 处理 |
