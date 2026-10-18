@@ -8,7 +8,7 @@
 
 ## 要准备什么
 
-1. 电脑浏览器（Chrome 等）装好 **OKX Wallet** 插件，并解锁钱包。
+1. 电脑浏览器（Chrome 等）装好 **OKX Wallet** 插件（[Chrome 应用商店](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge)），并解锁钱包。
 2. 钱包里有 **X Layer 网络上的 USDT**（链上显示为 USD₮0，和 USDT 1:1）。交易所里的余额不算，要先提到钱包。
 3. 一个 TeamoRouter 账号。
 
@@ -74,7 +74,7 @@
 
 You can pay for Claude, GPT (including the GPT-6 models Codex uses), GPT Image, Gemini and DeepSeek API usage with USDT by topping up [TeamoRouter](https://teamorouter.com). One balance covers 30+ models, multiple API keys and tools like Claude Code and Codex.
 
-**What you need:** a desktop browser with the **OKX Wallet** extension, and **USDT on the X Layer network** (shown on-chain as USD₮0). Exchange balances don't count until you withdraw them to your wallet. OKX can withdraw USDT straight to X Layer; from other exchanges, send it to OKX first. Without an OKX account, move USDT to X Layer with the Transfer page on the official USDT0 site, [usdt0.to](https://usdt0.to) (you pay gas on the source chain).
+**What you need:** a desktop browser with the **OKX Wallet** extension ([Chrome Web Store](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge)), and **USDT on the X Layer network** (shown on-chain as USD₮0). Exchange balances don't count until you withdraw them to your wallet. OKX can withdraw USDT straight to X Layer; from other exchanges, send it to OKX first. Without an OKX account, move USDT to X Layer with the Transfer page on the official USDT0 site, [usdt0.to](https://usdt0.to) (you pay gas on the source chain).
 
 **Steps:** sign in, open the top-up dialog (minimum $5), click **"Pay with crypto"**, approve the connection, switch to X Layer when asked, and sign. You sign an authorization, so you don't need OKB for gas. Then create an API key and connect it, e.g. [Claude Code setup](https://teamorouter.com/docs/install-claude-code).
 
@@ -90,7 +90,7 @@ Full walkthrough: [Pay for the Claude API with USDT](https://teamorouter.com/blo
 
 Если карта не проходит, а подписка Claude или ChatGPT из России недоступна, можно пополнить баланс [TeamoRouter](https://teamorouter.com/ru?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt) в USDT. Один ключ работает для Claude (Haiku / Sonnet / Opus), GPT (включая GPT-6 для Codex), GPT Image, Gemini и DeepSeek; списание только за использованные токены, без подписки. Claude Code подключается по родному протоколу Anthropic.
 
-**Что понадобится:** браузер на компьютере с расширением **OKX Wallet** и **USDT в сети X Layer** (в блокчейне отображается как USD₮0, 1:1 к USDT). Баланс на бирже не считается, пока вы не выведете его в кошелёк. С OKX USDT выводится прямо в X Layer; с других бирж сначала переведите USDT на OKX (например, по TRC20), затем выведите в X Layer. Без аккаунта OKX перевести USDT в X Layer можно через раздел Transfer на официальном сайте USDT0 [usdt0.to](https://usdt0.to) (газ платится в исходной сети).
+**Что понадобится:** браузер на компьютере с расширением **OKX Wallet** ([Chrome Web Store](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge)) и **USDT в сети X Layer** (в блокчейне отображается как USD₮0, 1:1 к USDT). Баланс на бирже не считается, пока вы не выведете его в кошелёк. С OKX USDT выводится прямо в X Layer; с других бирж сначала переведите USDT на OKX (например, по TRC20), затем выведите в X Layer. Без аккаунта OKX перевести USDT в X Layer можно через раздел Transfer на официальном сайте USDT0 [usdt0.to](https://usdt0.to) (газ платится в исходной сети).
 
 **Шаги:** войдите в консоль, откройте окно пополнения (минимум $5), нажмите **«Оплатить криптовалютой»**, подтвердите подключение кошелька, переключитесь на X Layer и подпишите запрос. Это подпись, а не перевод, поэтому платить за газ не нужно.
 
