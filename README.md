@@ -1,6 +1,6 @@
 # 用 USDT 充值 Claude / GPT / 生图 API（不办 U卡、不用海外信用卡）
 
-[English](#english) · [Русский](#русский) · 中文
+[English](#english) · [Русский](#русский) · [Tiếng Việt](#tiếng-việt) · 中文
 
 想用 Claude、GPT 但没有海外信用卡，U卡办不下来，野卡也停了？可以直接用 USDT 给 [TeamoRouter](https://teamorouter.com/zh) 充值，一个 Key 按量调用 Claude、GPT（含 Codex 用的 GPT-6 系列）、GPT Image 生图、Gemini、DeepSeek 等 30 多个模型，适合个人开发者，也适合要同时接很多模型的产品和中转站，能开多个 Key 分开统计。
 
@@ -95,3 +95,17 @@ Full walkthrough: [Pay for the Claude API with USDT](https://teamorouter.com/blo
 **Шаги:** войдите в консоль, откройте окно пополнения (минимум $5), нажмите **«Оплатить криптовалютой»**, подтвердите подключение кошелька, переключитесь на X Layer и подпишите запрос. Это подпись, а не перевод, поэтому платить за газ не нужно.
 
 Подробная инструкция с частыми ошибками: [Как оплатить Claude API в USDT](https://teamorouter.com/ru/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt). Нет USDT — можно оплатить в рублях (СБП, карта Мир, ЮMoney, SberPay): [Claude Code в России](https://teamorouter.com/ru/blogs/claude-code-in-russia?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt).
+
+---
+
+## Tiếng Việt
+
+### Thanh toán Claude, GPT và API tạo ảnh bằng USDT, không cần thẻ quốc tế
+
+Không có thẻ Visa quốc tế, hoặc thẻ bị từ chối khi mua Claude? Bạn có thể nạp USDT vào [TeamoRouter](https://teamorouter.com?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt-vi) và dùng một API key cho Claude (Haiku / Sonnet / Opus), GPT (kể cả GPT-6 cho Codex), GPT Image, Gemini và DeepSeek. Trả theo lượng token dùng thực tế, không thuê bao, nạp từ $5. Claude chạy giao thức gốc của Anthropic, nên Claude Code chỉ cần đổi base URL.
+
+**Cần chuẩn bị:** trình duyệt máy tính có tiện ích **OKX Wallet** ([Chrome Web Store](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge)) và **USDT trên mạng X Layer** (trên chuỗi hiển thị là USD₮0, tỷ lệ 1:1 với USDT). Số dư trên sàn không tính cho đến khi bạn rút về ví.
+
+**Chuyển USDT sang X Layer:** từ OKX có thể rút USDT thẳng về X Layer. Từ Binance, rút USDT qua mạng Arbitrum (đó là USDT0) về địa chỉ OKX Wallet của bạn, rồi chuyển sang X Layer bằng trang Transfer của [usdt0.to](https://usdt0.to) (cần một ít ETH trên Arbitrum để trả phí).
+
+**Các bước:** đăng nhập, mở cửa sổ nạp tiền (tối thiểu $5), bấm **"Pay with crypto"**, xác nhận kết nối ví, chuyển sang X Layer khi được hỏi và ký. Đây là chữ ký ủy quyền, không phải bạn tự gửi giao dịch, nên không tốn phí gas. Hướng dẫn chi tiết (tiếng Anh): [How to pay with crypto](https://teamorouter.com/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt-vi).
