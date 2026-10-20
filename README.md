@@ -4,41 +4,43 @@
 
 想用 Claude、GPT 但没有海外信用卡，U卡办不下来，野卡也停了？可以直接用 USDT 给 [TeamoRouter](https://teamorouter.com/zh) 充值，一个 Key 按量调用 Claude、GPT（含 Codex 用的 GPT-6 系列）、GPT Image 生图、Gemini、DeepSeek 等 30 多个模型，适合个人开发者，也适合要同时接很多模型的产品和中转站，能开多个 Key 分开统计。
 
-在充值弹窗点 **「USDT支付」** 会跳到收银台页面：选好网络，再用币安、OKX 等交易所 App 或任意钱包，把 USDT 转到页面给出的地址即可。不用装浏览器钱包插件，手机上也能付，最低 5 美元。
+在充值弹窗点 **「USDT支付」** 会跳到收银台页面：先选币（USDT、USDC 或 ETH），再选网络，然后用币安、OKX 等交易所 App 或任意钱包，把币转到页面给出的地址即可。收银台会按金额显示可用网络（BEP20 从 $5 起就能用）。不用装浏览器钱包插件，手机上也能付，最低 5 美元。
 
 完整图文步骤见官方指南：[用 USDT 充值 Claude API](https://teamorouter.com/zh/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt)。
 
 ## 要准备什么
 
 1. 一个 TeamoRouter 账号。
-2. 交易所或钱包里的 **USDT**，数量要够付充值金额，再加上提币手续费。
+2. 交易所或钱包里的 **USDT、USDC 或 ETH**，数量要够付充值金额，再加上提币手续费。
 
 不需要别的。收银台就是一个普通网页，手机上开着交易所 App 就能付。
 
-## 支持哪些网络
+## 支持哪些币和网络
 
-只收 USDT，可以走这三个网络：
+收银台收 USDT、USDC 和 ETH，能选哪些币和网络取决于订单金额。截至 2026-10-20，收银台会按你的金额显示可用的选项：
 
-| 网络 | 说明 |
+| 订单金额 | 收银台提供 |
 |---|---|
-| BEP20（BNB Smart Chain） | 推荐，币安提币手续费约 0.01 USDT |
-| TRC20（Tron 波场） | 币安提币手续费约 1.5 USDT |
-| ERC20（以太坊） | |
+| 5 美元起 | ETH、BNB Smart Chain（BEP20）上的 USDC、BEP20 上的 USDT |
+| 20 美元起 | 另加 Base 上的 USDC、以太坊（ERC20）上的 USDT |
+| 50 美元起 | 另加波场（TRC20）上的 USDT |
 
-往收银台地址转其他币，不会算作付款。提币手续费由各交易所定，会调整，以提币页面显示的为准。
+小额充值优先选 **USDT 的 BEP20**：5 美元起就能用，币安提币走 BEP20 手续费约 0.01 USDT，走 TRC20 约 1.5 USDT。OKX 提 USDT 不支持 BEP20，从 OKX 付的话，充 20 美元以上选 ERC20，比 TRC20 便宜。
+
+只转你在收银台选的币和网络；往收银台地址转别的币，不会算作付款。提币手续费由各交易所定，会调整，以提币页面显示的为准。
 
 ## 充值步骤
 
-1. 登录 TeamoRouter，在控制台打开充值弹窗，选择金额（不低于 5 美元）。
+1. 登录 TeamoRouter，在控制台打开充值弹窗，选择金额（不低于 5 美元）。金额决定收银台能选哪些币和网络。
 2. 点 **「USDT支付」**，页面会跳到收银台。用手机号注册的账号，会先被要求填一个邮箱，填好再继续。
-3. 收银台直接进入「选择网络」，选你要转出的网络（BEP20、TRC20 或 ERC20）。页面会显示要转的 USDT 数量和收款地址，这一单 **60 分钟内有效**。
-4. 打开交易所 App 发起提币（用钱包的话就是「发送/转账」）：币种选 USDT，网络选**和收银台上同一个**，粘贴收银台上的地址，填写数量时保证**到账数量不少于页面上的数量**。
+3. 收银台先让你选币（USDT、USDC 或 ETH），再选要转出的网络，这里只列出当前金额能用的网络。页面会显示要转的数量和收款地址，这一单 **60 分钟内有效**。
+4. 打开交易所 App 发起提币（用钱包的话就是「发送/转账」）：币种和网络都选**和收银台上一样的**，粘贴收银台上的地址，填写数量时保证**到账数量不少于页面上的数量**。
 5. 等链上确认。付款确认后余额会自动到账，中途关掉收银台页面也不影响。如果暂时没看到，过一会儿再刷新，不要重复付款。
 6. 到账后在控制台 [创建 API Key](https://teamorouter.com/dashboard?tab=api-keys&utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt)。
 
 ## 这几种情况会导致付款失败，提前避开
 
-- **提币网络和收银台选的不一致。** 提币时选的网络必须和收银台上选的一样。比如 BEP20 和 ERC20 的地址都是 0x 开头，交易所允许你用 ERC20 往收银台给的 BEP20 地址转 USDT，但这笔转账不会算作这一单的付款。不同交易所对网络的叫法不一样：BEP20 也可能写作 BSC 或 BNB Smart Chain，TRC20 写作 Tron，ERC20 写作 Ethereum。交易所提 USDT 不支持你选的网络，就回收银台换一个交易所支持的网络。
+- **提币的币或网络和收银台选的不一致。** 提币时选的币和网络必须和收银台上选的一样。比如 BEP20 和 ERC20 的地址都是 0x 开头，交易所允许你用 ERC20 往收银台给的 BEP20 地址转 USDT，但这笔转账不会算作这一单的付款。不同交易所对网络的叫法不一样：BEP20 也可能写作 BSC 或 BNB Smart Chain，TRC20 写作 Tron，ERC20 写作 Ethereum。交易所提这个币不支持你选的网络，就回收银台换一个交易所支持的网络。
 - **提币手续费让到账金额变少。** 很多交易所是从你填的数量里扣手续费。确认提币前看一眼提币页面上的「到账数量」，要不少于收银台上的数量；手续费是从填写数量里扣的，就把手续费加上去再填。少付不超过 1% 仍按付清处理；少得更多，不要再补转一笔，带上 TxID 联系客服。多付的话，余额按订单金额到账，多出的部分可以联系客服处理。
 - **交易所审核太久，订单 60 分钟过期。** 交易所有时会把提币转人工审核，用时可能超过 60 分钟。点「USDT支付」之前，先确认 USDT 已经在你要提币的交易所账户里。还没转订单就过期了：回收银台续期，或回控制台重新下一单，按页面上当前有效的地址转，不要用之前复制的旧地址。已经转了订单才过期：不要再转第二笔，先回收银台续期这一单，还解决不了就带上 TxID 联系客服。
 
@@ -54,13 +56,13 @@ TxID（也叫交易哈希、Txn Hash）是这笔转账在链上的编号，客�
 ## 常见问题
 
 - **要付手续费吗？** 收银台不额外收手续费。你只需要付交易所的提币手续费；用钱包转的话，付该网络的 gas。
-- **哪个网络最省钱？** 一般是 BEP20：币安提 USDT 走 BEP20 手续费约 0.01 USDT，走 TRC20 约 1.5 USDT。
+- **哪个网络最省钱？** 一般是 BEP20，而且 5 美元起就能用：币安提 USDT 走 BEP20 手续费约 0.01 USDT，走 TRC20 约 1.5 USDT。
 - **手机能付吗？** 能。手机上打开收银台页面，把地址和数量复制到交易所 App 里提币即可。
 - **转了钱，余额没变？** 不要重复付款，链上可能还在确认，过一会儿刷新控制台。如果订单过期了或少付了，按上面「这几种情况会导致付款失败」处理；还解决不了，带上 TxID 联系客服。
 
 ## 已经有 X Layer 上的 USDT？用 OKX 钱包付款
 
-OKX Wallet 和其他钱包一样，可以直接在收银台付款：在收银台选好网络，从钱包里转过去。用钱包转账要有该网络上付 gas 的币，比如 BEP20 要有 BNB。
+OKX Wallet 和其他钱包一样，可以直接在收银台付款：在收银台选好币和网络，从钱包里转过去。用钱包转账要有该网络上付 gas 的币，比如 BEP20 要有 BNB。
 
 如果你的 USDT 已经在 X Layer 上（链上显示为 USD₮0），也可以不走收银台：在电脑浏览器里装好并解锁 OKX Wallet 插件（[Chrome 应用商店](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge)），充值弹窗里会多出一个链接 **「已有 OKX 钱包（X Layer）？用钱包付款」**。点这个链接，不要点「USDT支付」按钮：
 
@@ -119,22 +121,22 @@ OKX Wallet 和其他钱包一样，可以直接在收银台付款：在收银台
 
 You can pay for Claude, GPT (including the GPT-6 models Codex uses), GPT Image, Gemini and DeepSeek API usage with USDT by topping up [TeamoRouter](https://teamorouter.com). One balance covers 30+ models, multiple API keys and tools like Claude Code and Codex.
 
-**What you need:** a TeamoRouter account and USDT on an exchange or in a wallet, enough to cover the top-up amount plus the withdrawal fee. No browser extension is needed, and it works on a phone.
+**What you need:** a TeamoRouter account and USDT, USDC or ETH on an exchange or in a wallet, enough to cover the top-up amount plus the withdrawal fee. No browser extension is needed, and it works on a phone.
 
-**Networks:** USDT only, on BEP20, TRC20 or ERC20; any other coin sent to the checkout address doesn't count as payment. Pick **USDT on BEP20** if you can: Binance charges about 0.01 USDT to withdraw on BEP20, against about 1.5 USDT on TRC20. Withdrawal fees are set by each exchange and change over time, so check the fee on the withdrawal screen.
+**Coins and networks:** the checkout accepts USDT, USDC and ETH, and which networks it offers depends on the order amount. As of 2026-10-20: from $5, ETH and USDC or USDT on BNB Smart Chain (BEP20); from $20, also USDC on Base and USDT on Ethereum (ERC20); from $50, also USDT on Tron (TRC20). The checkout shows what's available for your amount; anything else sent to the checkout address doesn't count as payment. For small amounts, pick **USDT on BEP20**: it's available from $5, and Binance charges about 0.01 USDT to withdraw on BEP20, against about 1.5 USDT on TRC20. Withdrawal fees are set by each exchange and change over time, so check the fee on the withdrawal screen.
 
 **Steps:**
 
 1. Sign in, open the top-up dialog and choose an amount ($5 or more).
 2. Click **"Pay with crypto"** (on a narrow screen the button reads **"Crypto"**). You're taken to the checkout page. If you signed up with a phone number, you'll be asked for an email address first.
-3. The checkout page opens on network selection. Pick the network you'll send on: BEP20, TRC20 or ERC20. The page shows how much USDT to send and a deposit address. The invoice is valid for **60 minutes**.
-4. In your exchange app, start a withdrawal (in a wallet, a send): choose **USDT on the same network**, paste the address, and enter the amount so that what arrives is **no less than the amount on the page**.
+3. The checkout page asks you to choose a coin (USDT, USDC or ETH), then the network you'll send on; only the networks available for your amount are listed. The page shows how much to send and a deposit address. The invoice is valid for **60 minutes**.
+4. In your exchange app, start a withdrawal (in a wallet, a send): choose **the same coin on the same network**, paste the address, and enter the amount so that what arrives is **no less than the amount on the page**.
 5. Wait for the network to confirm. Your balance is credited once the payment is confirmed, even if you close the checkout page. If it hasn't shown up yet, refresh in a while and don't pay again.
 6. Create an API key and connect it, e.g. [Claude Code setup](https://teamorouter.com/docs/install-claude-code).
 
 **What makes a payment fail:**
 
-- **A different network.** A transfer on a network other than the one you picked on the checkout page doesn't count as payment, even when the exchange accepts the address (BEP20 and ERC20 addresses both start with 0x). Exchanges may call BEP20 "BSC" or "BNB Smart Chain", TRC20 "Tron" and ERC20 "Ethereum".
+- **A different coin or network.** A transfer of a different coin, or on a network other than the one you picked on the checkout page, doesn't count as payment, even when the exchange accepts the address (BEP20 and ERC20 addresses both start with 0x). Exchanges may call BEP20 "BSC" or "BNB Smart Chain", TRC20 "Tron" and ERC20 "Ethereum".
 - **The withdrawal fee.** Many exchanges take it out of the amount you type. Check that the "amount received" is at least the amount on the checkout page; if not, add the fee on top. An invoice up to 1% short still counts as paid. If more is missing, don't send again; contact support with your TxID. If you send more, your balance is credited with the order amount, and you can contact support about the extra.
 - **The 60-minute invoice.** An exchange's manual review can take longer than that, so have the USDT in your exchange account before you click "Pay with crypto". Expired before you sent: renew the invoice on the checkout page or start a new top-up, and send to the address that's currently valid. Expired after you sent: don't send again; renew the invoice on the checkout page, then contact support with your TxID if that doesn't resolve it.
 
@@ -187,22 +189,22 @@ Full walkthrough: [Pay for the Claude API with USDT](https://teamorouter.com/blo
 
 Không có thẻ Visa quốc tế, hoặc thẻ bị từ chối khi mua Claude? Bạn có thể nạp USDT vào [TeamoRouter](https://teamorouter.com?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt-vi) và dùng một API key cho Claude (Haiku / Sonnet / Opus), GPT (kể cả GPT-6 cho Codex), GPT Image, Gemini và DeepSeek. Trả theo lượng token dùng thực tế, không thuê bao, nạp từ $5. Claude chạy giao thức gốc của Anthropic, nên Claude Code chỉ cần đổi base URL.
 
-**Cần chuẩn bị:** tài khoản TeamoRouter và USDT trên sàn hoặc trong ví, đủ cho số tiền nạp cộng phí rút. Không cần tiện ích trình duyệt, thanh toán được cả trên điện thoại.
+**Cần chuẩn bị:** tài khoản TeamoRouter và USDT, USDC hoặc ETH trên sàn hoặc trong ví, đủ cho số tiền nạp cộng phí rút. Không cần tiện ích trình duyệt, thanh toán được cả trên điện thoại.
 
-**Mạng hỗ trợ:** chỉ nhận USDT, trên BEP20, TRC20 hoặc ERC20; gửi coin khác tới địa chỉ thanh toán sẽ không được tính. Nên chọn **USDT BEP20**: Binance thu khoảng 0,01 USDT khi rút qua BEP20, so với khoảng 1,5 USDT qua TRC20. Phí rút do từng sàn đặt và có thể thay đổi, hãy xem trên màn hình rút.
+**Coin và mạng hỗ trợ:** trang thanh toán nhận USDT, USDC và ETH; coin và mạng nào được hiển thị tùy theo số tiền nạp. Tính đến 2026-10-20: từ $5 có ETH, USDC và USDT trên BNB Smart Chain (BEP20); từ $20 có thêm USDC trên Base và USDT trên Ethereum (ERC20); từ $50 có thêm USDT trên Tron (TRC20). Trang thanh toán hiển thị những lựa chọn dùng được với số tiền của bạn; gửi coin khác tới địa chỉ thanh toán sẽ không được tính. Với số tiền nhỏ, nên chọn **USDT BEP20**: dùng được từ $5, và Binance thu khoảng 0,01 USDT khi rút qua BEP20, so với khoảng 1,5 USDT qua TRC20. Phí rút do từng sàn đặt và có thể thay đổi, hãy xem trên màn hình rút.
 
 **Các bước:**
 
 1. Đăng nhập, mở cửa sổ nạp tiền và chọn số tiền (từ $5).
 2. Bấm **"Pay with crypto"** (trên màn hình hẹp nút hiển thị **"Crypto"**), bạn sẽ được chuyển tới trang thanh toán. Nếu bạn đăng ký bằng số điện thoại, bạn sẽ được yêu cầu nhập email trước.
-3. Trang thanh toán mở thẳng vào bước chọn mạng. Chọn mạng bạn sẽ gửi: BEP20, TRC20 hoặc ERC20. Trang hiển thị số USDT cần gửi và địa chỉ nhận. Hóa đơn có hiệu lực **60 phút**.
-4. Trong ứng dụng sàn, tạo lệnh rút (trong ví là lệnh gửi): chọn **USDT trên đúng mạng đó**, dán địa chỉ từ trang thanh toán, nhập số tiền sao cho số tiền nhận được **không ít hơn số tiền trên trang**.
+3. Trang thanh toán yêu cầu chọn coin trước (USDT, USDC hoặc ETH), sau đó chọn mạng bạn sẽ gửi; chỉ những mạng dùng được với số tiền của bạn mới hiện ra. Trang hiển thị số tiền cần gửi và địa chỉ nhận. Hóa đơn có hiệu lực **60 phút**.
+4. Trong ứng dụng sàn, tạo lệnh rút (trong ví là lệnh gửi): chọn **đúng coin trên đúng mạng đó**, dán địa chỉ từ trang thanh toán, nhập số tiền sao cho số tiền nhận được **không ít hơn số tiền trên trang**.
 5. Chờ mạng xác nhận. Số dư được cộng sau khi thanh toán được xác nhận, kể cả khi bạn đã đóng trang thanh toán. Nếu chưa thấy, hãy tải lại sau ít phút và đừng thanh toán lại.
 6. Khi số dư đã vào, tạo API key và bắt đầu gọi mô hình.
 
 **Những lỗi khiến thanh toán thất bại:**
 
-- **Rút sai mạng.** Giao dịch trên mạng khác với mạng đã chọn ở trang thanh toán sẽ không được tính là thanh toán, kể cả khi sàn chấp nhận địa chỉ (địa chỉ BEP20 và ERC20 đều bắt đầu bằng 0x). Tên mạng mỗi sàn một khác: BEP20 có thể là BSC hoặc BNB Smart Chain, TRC20 là Tron, ERC20 là Ethereum.
+- **Rút sai coin hoặc sai mạng.** Giao dịch bằng coin khác, hoặc trên mạng khác với mạng đã chọn ở trang thanh toán, sẽ không được tính là thanh toán, kể cả khi sàn chấp nhận địa chỉ (địa chỉ BEP20 và ERC20 đều bắt đầu bằng 0x). Tên mạng mỗi sàn một khác: BEP20 có thể là BSC hoặc BNB Smart Chain, TRC20 là Tron, ERC20 là Ethereum.
 - **Phí rút làm hụt số tiền.** Nhiều sàn trừ phí vào số tiền bạn nhập. Hãy kiểm tra dòng "số tiền nhận được" ít nhất bằng số tiền trên trang thanh toán; nếu chưa đủ, cộng thêm phí. Hóa đơn thiếu tối đa 1% vẫn được tính là đã thanh toán. Thiếu nhiều hơn thì đừng gửi thêm lần nữa, hãy liên hệ hỗ trợ kèm TxID. Nếu gửi dư, số dư được cộng theo số tiền đơn hàng, phần dư có thể liên hệ hỗ trợ.
 - **Hóa đơn 60 phút.** Sàn đôi khi giữ lệnh rút để duyệt thủ công, có thể lâu hơn 60 phút, nên hãy để sẵn USDT trong tài khoản sàn trước khi bấm "Pay with crypto". Hết hạn khi chưa gửi: gia hạn hóa đơn trên trang thanh toán hoặc tạo lệnh nạp mới, và gửi tới địa chỉ đang hiệu lực. Hết hạn sau khi đã gửi: đừng gửi lại; gia hạn hóa đơn trên trang thanh toán, nếu vẫn chưa được thì liên hệ hỗ trợ kèm TxID.
 
