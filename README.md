@@ -1,6 +1,6 @@
 # 用 USDT 充值 Claude / GPT / 生图 API（不办 U卡、不用海外信用卡）
 
-[English](#english) · [Русский](#русский) · [Tiếng Việt](#tiếng-việt) · 中文
+[English](#english) · [Русский](#русский) · 中文
 
 想用 Claude、GPT 但没有海外信用卡，U卡办不下来，野卡也停了？可以直接用 USDT 给 [TeamoRouter](https://teamorouter.com/zh) 充值，一个 Key 按量调用 Claude、GPT（含 Codex 用的 GPT-6 系列）、GPT Image 生图、Gemini、DeepSeek 等 30 多个模型，适合个人开发者，也适合要同时接很多模型的产品和中转站，能开多个 Key 分开统计。
 
@@ -183,33 +183,3 @@ Full walkthrough: [Pay for the Claude API with USDT](https://teamorouter.com/blo
 
 ---
 
-## Tiếng Việt
-
-### Thanh toán Claude, GPT và API tạo ảnh bằng USDT, không cần thẻ quốc tế
-
-Không có thẻ Visa quốc tế, hoặc thẻ bị từ chối khi mua Claude? Bạn có thể nạp USDT vào [TeamoRouter](https://teamorouter.com?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt-vi) và dùng một API key cho Claude (Haiku / Sonnet / Opus), GPT (kể cả GPT-6 cho Codex), GPT Image, Gemini và DeepSeek. Trả theo lượng token dùng thực tế, không thuê bao, nạp từ $5. Claude chạy giao thức gốc của Anthropic, nên Claude Code chỉ cần đổi base URL.
-
-**Cần chuẩn bị:** tài khoản TeamoRouter và USDT, USDC hoặc ETH trên sàn hoặc trong ví, đủ cho số tiền nạp cộng phí rút. Không cần tiện ích trình duyệt, thanh toán được cả trên điện thoại.
-
-**Coin và mạng hỗ trợ:** trang thanh toán nhận USDT, USDC và ETH; coin và mạng nào được hiển thị tùy theo số tiền nạp. Tính đến 2026-10-20: từ $5 có ETH, USDC và USDT trên BNB Smart Chain (BEP20); từ $20 có thêm USDC trên Base và USDT trên Ethereum (ERC20); từ $50 có thêm USDT trên Tron (TRC20). Trang thanh toán hiển thị những lựa chọn dùng được với số tiền của bạn; gửi coin khác tới địa chỉ thanh toán sẽ không được tính. Với số tiền nhỏ, nên chọn **USDT BEP20**: dùng được từ $5, và Binance thu khoảng 0,01 USDT khi rút qua BEP20, so với khoảng 1,5 USDT qua TRC20. Phí rút do từng sàn đặt và có thể thay đổi, hãy xem trên màn hình rút.
-
-**Các bước:**
-
-1. Đăng nhập, mở cửa sổ nạp tiền và chọn số tiền (từ $5).
-2. Bấm **"Pay with crypto"** (trên màn hình hẹp nút hiển thị **"Crypto"**), bạn sẽ được chuyển tới trang thanh toán. Nếu bạn đăng ký bằng số điện thoại, bạn sẽ được yêu cầu nhập email trước.
-3. Trang thanh toán yêu cầu chọn coin trước (USDT, USDC hoặc ETH), sau đó chọn mạng bạn sẽ gửi; chỉ những mạng dùng được với số tiền của bạn mới hiện ra. Trang hiển thị số tiền cần gửi và địa chỉ nhận. Hóa đơn có hiệu lực **60 phút**.
-4. Trong ứng dụng sàn, tạo lệnh rút (trong ví là lệnh gửi): chọn **đúng coin trên đúng mạng đó**, dán địa chỉ từ trang thanh toán, nhập số tiền sao cho số tiền nhận được **không ít hơn số tiền trên trang**.
-5. Chờ mạng xác nhận. Số dư được cộng sau khi thanh toán được xác nhận, kể cả khi bạn đã đóng trang thanh toán. Nếu chưa thấy, hãy tải lại sau ít phút và đừng thanh toán lại.
-6. Khi số dư đã vào, tạo API key và bắt đầu gọi mô hình.
-
-**Những lỗi khiến thanh toán thất bại:**
-
-- **Rút sai coin hoặc sai mạng.** Giao dịch bằng coin khác, hoặc trên mạng khác với mạng đã chọn ở trang thanh toán, sẽ không được tính là thanh toán, kể cả khi sàn chấp nhận địa chỉ (địa chỉ BEP20 và ERC20 đều bắt đầu bằng 0x). Tên mạng mỗi sàn một khác: BEP20 có thể là BSC hoặc BNB Smart Chain, TRC20 là Tron, ERC20 là Ethereum.
-- **Phí rút làm hụt số tiền.** Nhiều sàn trừ phí vào số tiền bạn nhập. Hãy kiểm tra dòng "số tiền nhận được" ít nhất bằng số tiền trên trang thanh toán; nếu chưa đủ, cộng thêm phí. Hóa đơn thiếu tối đa 1% vẫn được tính là đã thanh toán. Thiếu nhiều hơn thì đừng gửi thêm lần nữa, hãy liên hệ hỗ trợ kèm TxID. Nếu gửi dư, số dư được cộng theo số tiền đơn hàng, phần dư có thể liên hệ hỗ trợ.
-- **Hóa đơn 60 phút.** Sàn đôi khi giữ lệnh rút để duyệt thủ công, có thể lâu hơn 60 phút, nên hãy để sẵn USDT trong tài khoản sàn trước khi bấm "Pay with crypto". Hết hạn khi chưa gửi: gia hạn hóa đơn trên trang thanh toán hoặc tạo lệnh nạp mới, và gửi tới địa chỉ đang hiệu lực. Hết hạn sau khi đã gửi: đừng gửi lại; gia hạn hóa đơn trên trang thanh toán, nếu vẫn chưa được thì liên hệ hỗ trợ kèm TxID.
-
-**TxID ở đâu** (transaction hash, Txn Hash): trong ứng dụng sàn, mở lịch sử rút, chọn lệnh rút này và sao chép TxID trong phần chi tiết. TxID chỉ xuất hiện khi sàn đã thực sự gửi đi. Trong ví, hash nằm trong chi tiết giao dịch. Khi liên hệ hỗ trợ, gửi kèm TxID, mạng, số tiền, thời gian gửi và tài khoản TeamoRouter đã nạp.
-
-**Đã có USDT trên X Layer?** OKX Wallet cũng dùng được trên trang thanh toán như mọi ví khác (gửi từ ví cần coin của mạng đó để trả gas, ví dụ BNB trên BEP20). Nếu USDT của bạn đã ở trên X Layer (trên chuỗi hiển thị là USD₮0), có thể bỏ qua trang thanh toán: khi tiện ích **OKX Wallet** ([Chrome Web Store](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge)) đã được cài và mở khóa trên trình duyệt máy tính, cửa sổ nạp tiền hiện thêm liên kết **"Have USDT on X Layer? Pay with OKX Wallet"**. Bấm liên kết đó (không phải nút "Pay with crypto"), xác nhận kết nối ví, chuyển sang X Layer khi được hỏi và ký. Đây là chữ ký ủy quyền, không phải bạn tự gửi giao dịch, nên không tốn phí gas. Số dư trên sàn và USDT trên mạng khác không được tính; từ Binance có thể rút USDT qua mạng Arbitrum (đó là USDT0) về địa chỉ OKX Wallet rồi chuyển sang X Layer bằng trang Transfer của [usdt0.to](https://usdt0.to) (cần một ít ETH trên Arbitrum để trả phí).
-
-Hướng dẫn chi tiết (tiếng Anh): [How to pay with crypto](https://teamorouter.com/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt-vi).
