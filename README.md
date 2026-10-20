@@ -22,10 +22,10 @@
 | 订单金额 | 收银台提供 |
 |---|---|
 | 5 美元起 | ETH、BNB Smart Chain（BEP20）上的 USDC、BEP20 上的 USDT |
-| 20 美元起 | 另加 Base 上的 USDC、以太坊（ERC20）上的 USDT |
-| 50 美元起 | 另加波场（TRC20）上的 USDT |
+| 10 美元起 | 另加 Base 上的 USDC、以太坊（ERC20）上的 USDT |
+| 30 美元起 | 另加波场（TRC20）上的 USDT |
 
-小额充值优先选 **USDT 的 BEP20**：5 美元起就能用，币安提币走 BEP20 手续费约 0.01 USDT，走 TRC20 约 1.5 USDT。OKX 提 USDT 不支持 BEP20，从 OKX 付的话，充 20 美元以上选 ERC20，比 TRC20 便宜。
+小额充值优先选 **USDT 的 BEP20**：5 美元起就能用，币安提币走 BEP20 手续费约 0.01 USDT，走 TRC20 约 1.5 USDT。OKX 提 USDT 不支持 BEP20，从 OKX 付的话，充 10 美元以上选 ERC20，比 TRC20 便宜。
 
 只转你在收银台选的币和网络；往收银台地址转别的币，不会算作付款。提币手续费由各交易所定，会调整，以提币页面显示的为准。
 
@@ -123,7 +123,7 @@ You can pay for Claude, GPT (including the GPT-6 models Codex uses), GPT Image, 
 
 **What you need:** a TeamoRouter account and USDT, USDC or ETH on an exchange or in a wallet, enough to cover the top-up amount plus the withdrawal fee. No browser extension is needed, and it works on a phone.
 
-**Coins and networks:** the checkout accepts USDT, USDC and ETH, and which networks it offers depends on the order amount. As of 2026-10-20: from $5, ETH and USDC or USDT on BNB Smart Chain (BEP20); from $20, also USDC on Base and USDT on Ethereum (ERC20); from $50, also USDT on Tron (TRC20). The checkout shows what's available for your amount; anything else sent to the checkout address doesn't count as payment. For small amounts, pick **USDT on BEP20**: it's available from $5, and Binance charges about 0.01 USDT to withdraw on BEP20, against about 1.5 USDT on TRC20. Withdrawal fees are set by each exchange and change over time, so check the fee on the withdrawal screen.
+**Coins and networks:** the checkout accepts USDT, USDC and ETH, and which networks it offers depends on the order amount. As of 2026-10-20: from $5, ETH and USDC or USDT on BNB Smart Chain (BEP20); from $10, also USDC on Base and USDT on Ethereum (ERC20); from $30, also USDT on Tron (TRC20). The checkout shows what's available for your amount; anything else sent to the checkout address doesn't count as payment. For small amounts, pick **USDT on BEP20**: it's available from $5, and Binance charges about 0.01 USDT to withdraw on BEP20, against about 1.5 USDT on TRC20. Withdrawal fees are set by each exchange and change over time, so check the fee on the withdrawal screen.
 
 **Steps:**
 
