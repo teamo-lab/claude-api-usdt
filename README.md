@@ -99,6 +99,7 @@ OKX Wallet 和其他钱包一样，可以直接在收银台付款：在收银台
 - 可以建多个 API Key，每个 Key 的用量分开统计，方便按客户或按项目对账。
 - Claude 走 Anthropic 原生协议，其他模型走 OpenAI 兼容协议，现有代码一般只要换 base URL 和 Key。
 - 用 USDT 充值没有拒卡和跨境手续费，适合没有海外公司卡的团队。
+- 新模型（GPT Image 2.6、Kimi K3.1 Pro、GLM-5.3、Qwen3.8-Max 等）上线当天的型号 ID、官方价和调用示例：[teamo-lab/new-llm-api-releases](https://github.com/teamo-lab/new-llm-api-releases#中文)。
 
 ## 和办 U卡 / 虚拟卡订阅官方比
 
