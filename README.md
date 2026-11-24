@@ -147,6 +147,8 @@ You can pay for Claude, GPT (including the GPT-6 models Codex uses), GPT Image, 
 
 Full walkthrough: [Pay for the Claude API with USDT](https://teamorouter.com/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=b6_claude-api-usdt). Russian version: [Оплата Claude API в USDT](https://teamorouter.com/ru/blogs/pay-claude-with-usdt?utm_source=github&utm_medium=readme&utm_campaign=b6_claude-api-usdt).
 
+**Comparing providers?** See [Which AI APIs accept crypto: TeamoRouter, OpenRouter, NanoGPT, Venice, PayPerQ and LLMwithCrypto compared](https://teamorouter.com/blogs/llm-api-crypto-payment-compared?utm_source=github&utm_medium=readme&utm_campaign=claude-api-usdt).
+
 **Card declined on Claude?** See [How to pay for Claude when your card gets declined](https://teamorouter.com/blogs/claude-card-declined-payment-fixes-2026).
 
 ---
